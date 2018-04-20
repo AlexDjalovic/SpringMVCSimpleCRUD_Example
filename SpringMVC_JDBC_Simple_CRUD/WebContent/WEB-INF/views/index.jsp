@@ -8,7 +8,7 @@
 </head>
 <body>
 <h2>DOBRODOSLI</h2>
-<a href="formaZaInsert">Add Employee</a>  
-<a href="viewemp">View Employees</a>
+<a href="formaZaInsert">DODAJ ZAPOSLENOG</a>  
+<a href="viewemp">Pogledaj sve zaposlene</a>
 </body>
 </html>
