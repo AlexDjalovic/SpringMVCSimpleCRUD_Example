@@ -1,0 +1,11 @@
+@charset "ISO-8859-1";
+.tabela{
+	margin: auto;
+	text-align: center;
+	color: #ff0080;
+	background: #00ff40;
+}
+h2{
+	color:purple;
+	background: yellow;
+}
