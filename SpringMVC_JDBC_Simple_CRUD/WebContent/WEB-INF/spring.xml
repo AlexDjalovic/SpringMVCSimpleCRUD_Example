@@ -51,5 +51,5 @@
    <!-- DA BI MOGAO DA KORISTIM ANOTACIJE ZA VALIDACIJU BEANOVA i bitno je za css i js takodje -->    
     <mvc:annotation-driven/>
     <!-- DA BI MOGAO DA KORISTIM CSS I JS FAJLOVE -->
-      <mvc:resources location="/recources/" mapping="/recources/**"></mvc:resources>
+      <mvc:resources location="/recources/" mapping="/recources/**"/>
         </beans>
