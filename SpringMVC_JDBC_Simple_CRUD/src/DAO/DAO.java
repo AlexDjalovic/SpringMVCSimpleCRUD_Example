@@ -46,12 +46,14 @@ public class DAO {
 	}
 
 	public void update(Employee emp) {
-		 String sql="update employeespring set name='"+emp.getName()+"', salary="+emp.getSalary()+",designation='"+emp.getDesignation()+"' where id="+emp.getId()+""; 
+		// String sql="update employeespring set name='"+emp.getName()+"', salary="+emp.getSalary()+",designation='"+emp.getDesignation()+"' where id="+emp.getId()+""; 
+		String sql="update employeespring set name='"+emp.getName()+"',salary='"+emp.getSalary()+"' WHERE Id='"+emp.getId()+"'";
+		//MORA DA SE STAVE ' PRE KRAJA "
 		template.update(sql);
 	}
 
 	public int delete(int id){  
-	    String sql="delete from employeespring where id="+id+"";  
+	    String sql="delete from employeespring where id="+id;  
 	    return template.update(sql);  
 	}  
 }
