@@ -6,9 +6,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Insert title here</title>
-<style type="text/css">
-.greska{color:black; font-style: italic;}
-</style>
+
  <!--  <link rel="stylesheet" type="text/css" href="/MojCSS.css">-->
  <spring:url value="/recources/MojCSS.css" var="izgled"/>
  <link rel="stylesheet" href="${izgled}" type="text/css">
