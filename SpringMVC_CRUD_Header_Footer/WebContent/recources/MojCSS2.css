@@ -1,0 +1,44 @@
+@charset "ISO-8859-1";
+.tabela{
+	margin: auto;
+	text-align: center;
+	color: #ff0080;
+	background: #ff8000;
+}
+h2{
+	color:purple;
+	background: pink;
+}
+.greska{
+	color:black; font-style: italic;
+	}
+	
+body{
+	width:1000px;
+    margin: 20px auto;
+    height: 600px;
+}
+header{
+	 height: 150px;
+ background: #ff0080;
+  width:1000px;
+}
+#headerText{
+    padding-top: 60px;
+    padding-left: 60px;
+    color: white;
+    float: left;
+    font-size: 40px;
+    font-family: "Courier New", Courier, monospace;
+    font-weight: bold;
+}
+#telo{
+	  height: 600px;
+    background-color: whitesmoke;
+     margin: 20px auto;
+}
+footer{
+	height: 150px;
+ background: #ff0080;
+  width:1000px;
+}
