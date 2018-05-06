@@ -10,5 +10,6 @@
 <h2>DOBRODOSLI</h2>
 <a href="formaZaInsert">DODAJ ZAPOSLENOG</a>  
 <a href="viewemp">Pogledaj sve zaposlene</a>
+<a href="upisDece">Upisi decu</a>
 </body>
 </html>

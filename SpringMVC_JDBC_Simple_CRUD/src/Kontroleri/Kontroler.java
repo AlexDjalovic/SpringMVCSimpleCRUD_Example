@@ -61,5 +61,14 @@ public class Kontroler {
 		return new ModelAndView("redirect:/viewemp");
 		  
 	  }
-	  
+	  @ModelAttribute
+	  public void prikazi(Model model) {
+		  List<Employee> list=dao.getEmployees();  
+		  model.addAttribute("list", list);
+	  }
+	  @RequestMapping(value="/upisiDete", method=RequestMethod.POST)
+	  public String upisiDete() {
+		return null;
+		  
+	  }
 }

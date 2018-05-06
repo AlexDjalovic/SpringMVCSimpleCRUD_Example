@@ -9,7 +9,7 @@ import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
 import org.springframework.stereotype.Repository;
 
-
+import model.Dete;
 import model.Employee;
 
 @Repository
@@ -56,4 +56,8 @@ public class DAO {
 	    String sql="delete from employeespring where id="+id;  
 	    return template.update(sql);  
 	}  
+	public void upisiDete(Dete dete) {
+		String sql="insert into dete(imeDeteta,Id)values(?,?)"; 
+		template.update(sql, new Object[] {dete.getImeDeteta()});
+	}
 }
