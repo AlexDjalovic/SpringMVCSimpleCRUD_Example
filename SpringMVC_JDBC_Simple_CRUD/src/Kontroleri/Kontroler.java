@@ -67,8 +67,8 @@ public class Kontroler {
 	  public void prikazi(Model model) {
 		  List<Employee> list=dao.getEmployees();  
 		  model.addAttribute("list", list);
-		//  model.addAttribute("dete", new Dete()); Moze i ovde ako nemam ovu medjuformu
-		 // model.addAttribute("emp", new Employee());isto i ovo ako hocu da koristim emp i dete moram da napravim instancu
+		//  model.addAttribute("dete", new Dete()); //Moze i ovde ako nemam ovu medjuformu
+		//  model.addAttribute("emp", new Employee());//isto i ovo ako hocu da koristim emp i dete moram da napravim instancu
 	  }
 	  @RequestMapping(value="/upisDece", method=RequestMethod.GET)
 	  public String upisDece(Model model) {
