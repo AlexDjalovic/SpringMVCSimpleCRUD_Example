@@ -78,7 +78,7 @@ public class Kontroler {
 	  }
 	  @RequestMapping(value="/upisiDete", method=RequestMethod.POST)
 	  public String upisiDete(@ModelAttribute("dete") Dete dete,Model model) {
-		  //dao.upisiDete(dete);
+		  dao.upisiDete(dete);
 		  model.addAttribute("dete", dete);
 		return "SpisakDece";
 		  

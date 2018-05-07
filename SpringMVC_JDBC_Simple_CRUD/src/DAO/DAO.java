@@ -58,6 +58,6 @@ public class DAO {
 	}  
 	public void upisiDete(Dete dete) {
 		String sql="insert into dete(imeDeteta,Id)values(?,?)"; 
-		template.update(sql, new Object[] {dete.getImeDeteta()});
+		template.update(sql, new Object[] {dete.getImeDeteta(),dete.getId()});
 	}
 }
