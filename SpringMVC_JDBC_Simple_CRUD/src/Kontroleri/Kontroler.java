@@ -83,6 +83,7 @@ public class Kontroler {
 		return "SpisakDece";
 		  
 	  }
+	  //POKUSAJ DA POKUPIM PARAMETAR PO PARAMETAR KAO KOD OBICNIH JSP I SERVLETA
 	/* @RequestMapping(value="/upisiDete", method=RequestMethod.POST)
 	  public String upisiDete(@RequestParam("imeDeteta")String imeDeteta,@RequestParam("ime")String ime,Model model) {
 		
