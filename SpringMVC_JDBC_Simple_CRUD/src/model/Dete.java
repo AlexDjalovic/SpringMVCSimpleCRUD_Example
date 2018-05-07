@@ -32,5 +32,7 @@ public class Dete {
 		super();
 	}
 	
-	
+	public String toString() {
+		return imeDeteta+"/"+Id;
+	}
 }

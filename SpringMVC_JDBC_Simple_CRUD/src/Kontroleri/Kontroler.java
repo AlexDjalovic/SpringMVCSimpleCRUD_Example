@@ -12,9 +12,11 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
 import DAO.DAO;
+import model.Dete;
 import model.Employee;
 
 @Controller
@@ -65,10 +67,34 @@ public class Kontroler {
 	  public void prikazi(Model model) {
 		  List<Employee> list=dao.getEmployees();  
 		  model.addAttribute("list", list);
+		//  model.addAttribute("dete", new Dete()); Moze i ovde ako nemam ovu medjuformu
+		 // model.addAttribute("emp", new Employee());isto i ovo ako hocu da koristim emp i dete moram da napravim instancu
 	  }
-	  @RequestMapping(value="/upisiDete", method=RequestMethod.POST)
-	  public String upisiDete() {
-		return null;
+	  @RequestMapping(value="/upisDece", method=RequestMethod.GET)
+	  public String upisDece(Model model) {
+		  model.addAttribute("dete", new Dete());
+		return "upisDece";
 		  
 	  }
+	  @RequestMapping(value="/upisiDete", method=RequestMethod.POST)
+	  public String upisiDete(@ModelAttribute("dete") Dete dete,Model model) {
+		  //dao.upisiDete(dete);
+		  model.addAttribute("dete", dete);
+		return "SpisakDece";
+		  
+	  }
+	/* @RequestMapping(value="/upisiDete", method=RequestMethod.POST)
+	  public String upisiDete(@RequestParam("imeDeteta")String imeDeteta,@RequestParam("ime")String ime,Model model) {
+		
+		 int id=0;
+		 for(Employee emp:dao.getEmployees()) {
+			 if(emp.getName().equalsIgnoreCase(ime)) {
+				 id=emp.getId();
+			 }
+		 }
+		  model.addAttribute("ime", imeDeteta);
+		  model.addAttribute("id", id);
+		  model.addAttribute("zap", ime);
+		return "SpisakDece";
+		}*/
 }
